@@ -1,0 +1,542 @@
+{
+ "date": "2026-08-10",
+ "region": "KR",
+ "categories": {
+  "all": {
+   "name": "전체",
+   "videos": [
+    {
+     "id": "54vn_7Pm-1A",
+     "title": "NCT 127 엔시티 127 'Piñata' Track Video Teaser",
+     "channel": "NCT 127",
+     "publishedAt": "2026-08-09T15:00:10Z",
+     "views": 88784,
+     "likes": 16758,
+     "comments": 1068,
+     "durationSec": 22,
+     "thumb": "https://i.ytimg.com/vi/54vn_7Pm-1A/mqdefault.jpg"
+    },
+    {
+     "id": "-Gv1oUyuzgA",
+     "title": "[MV] JUEUN(주은) _ Heartbeat(너랑 나는) (Feat.SHIRT)",
+     "channel": "1theK (원더케이)",
+     "publishedAt": "2026-08-09T09:00:03Z",
+     "views": 37159,
+     "likes": 1342,
+     "comments": 191,
+     "durationSec": 126,
+     "thumb": "https://i.ytimg.com/vi/-Gv1oUyuzgA/mqdefault.jpg"
+    }
+   ],
+   "stats": {
+    "avgDurationSec": 74,
+    "peakUploadSlotKST": "0~3시",
+    "peakUploadShare": 50,
+    "avgTitleLength": 45,
+    "hashtagShare": 0,
+    "medianViews": 88784
+   }
+  },
+  "c10": {
+   "name": "음악/댄스",
+   "videos": [],
+   "stats": null
+  },
+  "c20": {
+   "name": "게임",
+   "videos": [],
+   "stats": null
+  },
+  "c23": {
+   "name": "코미디/밈",
+   "videos": [],
+   "stats": null
+  },
+  "c15": {
+   "name": "반려동물",
+   "videos": [],
+   "stats": null
+  },
+  "c26": {
+   "name": "뷰티/패션",
+   "videos": [],
+   "stats": null
+  },
+  "c17": {
+   "name": "스포츠",
+   "videos": [],
+   "stats": null
+  },
+  "c22": {
+   "name": "브이로그/일상",
+   "videos": [],
+   "stats": null
+  },
+  "q_food": {
+   "name": "먹방/요리",
+   "videos": [
+    {
+     "id": "FNsuQltyruk",
+     "title": "보들야들 한치 먹다가 결국 이렇게 됐습니다 😂 #먹방 #한치 #mukbang",
+     "channel": "입작은 하마 로루맘",
+     "publishedAt": "2026-08-07T10:00:33Z",
+     "views": 40563,
+     "likes": 451,
+     "comments": 48,
+     "durationSec": 22,
+     "thumb": "https://i.ytimg.com/vi/FNsuQltyruk/mqdefault.jpg"
+    },
+    {
+     "id": "AMGcHeTONhE",
+     "title": "깜짝 놀랄정도로 맛있어진 강남 저온카츠 1티어 #shorts #맛집",
+     "channel": "재슐랭가이드",
+     "publishedAt": "2026-08-08T08:41:41Z",
+     "views": 40352,
+     "likes": 556,
+     "comments": 24,
+     "durationSec": 47,
+     "thumb": "https://i.ytimg.com/vi/AMGcHeTONhE/mqdefault.jpg"
+    },
+    {
+     "id": "PrxBSskuOIo",
+     "title": "역대급 도미노 먹방 TOP5 #랭킹쇼츠 #리센느",
+     "channel": "요물남",
+     "publishedAt": "2026-08-07T21:00:10Z",
+     "views": 33652,
+     "likes": 867,
+     "comments": 14,
+     "durationSec": 34,
+     "thumb": "https://i.ytimg.com/vi/PrxBSskuOIo/mqdefault.jpg"
+    },
+    {
+     "id": "99FNrq_nx0Q",
+     "title": "박진영 26년 만에 일본 편의점 간식 먹방! 추성훈 추천에 반했다",
+     "channel": "파우치톡",
+     "publishedAt": "2026-08-09T09:00:11Z",
+     "views": 18821,
+     "likes": 0,
+     "comments": 0,
+     "durationSec": 19,
+     "thumb": "https://i.ytimg.com/vi/99FNrq_nx0Q/mqdefault.jpg"
+    },
+    {
+     "id": "A9yV6dZdD1s",
+     "title": "고든 램지에게 이 요리를 보여주면 생기는 일",
+     "channel": "디쥬노우",
+     "publishedAt": "2026-08-07T21:30:10Z",
+     "views": 11656,
+     "likes": 67,
+     "comments": 0,
+     "durationSec": 56,
+     "thumb": "https://i.ytimg.com/vi/A9yV6dZdD1s/mqdefault.jpg"
+    },
+    {
+     "id": "gqcCCkDh2q0",
+     "title": "이건 못 참지… 초코 폭탄 3종 먹방🍫🔥",
+     "channel": "GoldenMoney골든머니",
+     "publishedAt": "2026-08-08T07:47:07Z",
+     "views": 10661,
+     "likes": 53,
+     "comments": 3,
+     "durationSec": 9,
+     "thumb": "https://i.ytimg.com/vi/gqcCCkDh2q0/mqdefault.jpg"
+    },
+    {
+     "id": "vE_1YYyl0EQ",
+     "title": "고구마피자&불닭 먹방asmr🔥 Pizza & Spicy Buldak Noodle Mukbang🍕",
+     "channel": "BENI 유베니",
+     "publishedAt": "2026-08-07T10:20:58Z",
+     "views": 9588,
+     "likes": 0,
+     "comments": 9,
+     "durationSec": 44,
+     "thumb": "https://i.ytimg.com/vi/vE_1YYyl0EQ/mqdefault.jpg"
+    },
+    {
+     "id": "7TomXbqQVEg",
+     "title": "삼계탕 끓이다가 닭한테 체조시킨 몽구ㅋㅋ#강아지쇼츠#강아지인터뷰#겸몽구만만세 #복날음식",
+     "channel": "겸 몽구  만만세",
+     "publishedAt": "2026-08-09T11:20:15Z",
+     "views": 8225,
+     "likes": 355,
+     "comments": 11,
+     "durationSec": 132,
+     "thumb": "https://i.ytimg.com/vi/7TomXbqQVEg/mqdefault.jpg"
+    },
+    {
+     "id": "1BdtCSyrHvg",
+     "title": "BTS도 피하지 못한 한국인 특) 미숫가루 논쟁 ㅋㅋㅋ #BTS #방탄소년단 #shorts #지민 #방탄예능",
+     "channel": "스타파우치랩",
+     "publishedAt": "2026-08-08T02:35:41Z",
+     "views": 5605,
+     "likes": 46,
+     "comments": 1,
+     "durationSec": 58,
+     "thumb": "https://i.ytimg.com/vi/1BdtCSyrHvg/mqdefault.jpg"
+    },
+    {
+     "id": "THbfL9a0-ts",
+     "title": "먹고 자며 자연과 하나 된 스페인 순례길 먹방 여행 #shorts",
+     "channel": "숏츠보고",
+     "publishedAt": "2026-08-09T21:00:18Z",
+     "views": 5138,
+     "likes": 59,
+     "comments": 3,
+     "durationSec": 44,
+     "thumb": "https://i.ytimg.com/vi/THbfL9a0-ts/mqdefault.jpg"
+    },
+    {
+     "id": "6QhLZ9ywqks",
+     "title": "고추다대기에 명란을 넣었다고?",
+     "channel": "리뷰하는 대표님",
+     "publishedAt": "2026-08-07T08:00:03Z",
+     "views": 3472,
+     "likes": 53,
+     "comments": 4,
+     "durationSec": 49,
+     "thumb": "https://i.ytimg.com/vi/6QhLZ9ywqks/mqdefault.jpg"
+    },
+    {
+     "id": "vUi9MX6pRGQ",
+     "title": "[폭소] 1초 만에 중독됨 ㅋㅋㅋ 먹방 영상 배속했더니 진짜 기니피그 소리 나는 여돌? #Shorts #리센느 #kpop",
+     "channel": "야르픽",
+     "publishedAt": "2026-08-09T02:45:05Z",
+     "views": 2801,
+     "likes": 54,
+     "comments": 2,
+     "durationSec": 8,
+     "thumb": "https://i.ytimg.com/vi/vUi9MX6pRGQ/mqdefault.jpg"
+    },
+    {
+     "id": "yhZtxGv8c10",
+     "title": "흔한 후라이드 안 흔하게 먹는 법 #shorts",
+     "channel": "맛잘알꾸리",
+     "publishedAt": "2026-08-07T08:52:29Z",
+     "views": 2303,
+     "likes": 10,
+     "comments": 3,
+     "durationSec": 34,
+     "thumb": "https://i.ytimg.com/vi/yhZtxGv8c10/mqdefault.jpg"
+    },
+    {
+     "id": "zn9gM5SdPa8",
+     "title": "포천 이동갈비 먹방 : 포천여행 양념소갈비 양념게장 #mukbang #먹방 #shorts #쇼츠",
+     "channel": "최강패밀리",
+     "publishedAt": "2026-08-08T09:00:03Z",
+     "views": 2015,
+     "likes": 9,
+     "comments": 0,
+     "durationSec": 29,
+     "thumb": "https://i.ytimg.com/vi/zn9gM5SdPa8/mqdefault.jpg"
+    },
+    {
+     "id": "dFWnLzm5nv0",
+     "title": "매운 양념 바다 장어 볶음 먹방 ASMR 노토킹 리얼사운드 집밥 레시피 이팅사운드 #mukbang #먹방 #리얼사운드 #집밥브이로그 #먹방브이로그  #food #만능소스 #쌀밥",
+     "channel": "Captain-Q ASMR 캡틴큐",
+     "publishedAt": "2026-08-07T10:00:15Z",
+     "views": 1987,
+     "likes": 9,
+     "comments": 2,
+     "durationSec": 57,
+     "thumb": "https://i.ytimg.com/vi/dFWnLzm5nv0/mqdefault.jpg"
+    },
+    {
+     "id": "UxqkfdBLnUk",
+     "title": "#쇼츠#투어#먹방#바이크#",
+     "channel": "풍남",
+     "publishedAt": "2026-08-09T00:48:47Z",
+     "views": 1912,
+     "likes": 12,
+     "comments": 7,
+     "durationSec": 27,
+     "thumb": "https://i.ytimg.com/vi/UxqkfdBLnUk/mqdefault.jpg"
+    },
+    {
+     "id": "8QO6YSme1fk",
+     "title": "[조선시대TV] 임금님의 평양냉면 먹방 브이로그",
+     "channel": "월하의미인",
+     "publishedAt": "2026-08-07T10:30:17Z",
+     "views": 1835,
+     "likes": 9,
+     "comments": 0,
+     "durationSec": 37,
+     "thumb": "https://i.ytimg.com/vi/8QO6YSme1fk/mqdefault.jpg"
+    },
+    {
+     "id": "qNNPBsZgCjU",
+     "title": "#청주맛집 #유미초밥 #동남지구맛집 #초밥 #shorts #쇼츠 #sushi #story #food #yummy #먹방 #sushi #좋아요 #추천추천추천추천",
+     "channel": "초코나무TV",
+     "publishedAt": "2026-08-08T05:22:37Z",
+     "views": 1785,
+     "likes": 5,
+     "comments": 0,
+     "durationSec": 21,
+     "thumb": "https://i.ytimg.com/vi/qNNPBsZgCjU/mqdefault.jpg"
+    },
+    {
+     "id": "0PXK6rtH6qk",
+     "title": "손으로 먹는 우아한 먹방🤭🤭 #아기 #아기쇼츠 #아기영상 #아기일상 #아기브이로그 #일상 #일상기록 #vlog #브이로그 #육아 #육아브이로그 #먹방 #먹방브이로그 #쇼츠",
+     "channel": "러블리정",
+     "publishedAt": "2026-08-09T10:06:00Z",
+     "views": 1752,
+     "likes": 19,
+     "comments": 0,
+     "durationSec": 125,
+     "thumb": "https://i.ytimg.com/vi/0PXK6rtH6qk/mqdefault.jpg"
+    },
+    {
+     "id": "dBi0GSBHhCI",
+     "title": "#장수풍뎅이 #곤충젤리 #반려곤충 #먹방 #사육일기 #동물쇼츠 #귀여운곤충",
+     "channel": "1cm 다큐",
+     "publishedAt": "2026-08-07T12:52:55Z",
+     "views": 1724,
+     "likes": 13,
+     "comments": 0,
+     "durationSec": 14,
+     "thumb": "https://i.ytimg.com/vi/dBi0GSBHhCI/mqdefault.jpg"
+    }
+   ],
+   "stats": {
+    "avgDurationSec": 43,
+    "peakUploadSlotKST": "18~21시",
+    "peakUploadShare": 40,
+    "avgTitleLength": 46,
+    "hashtagShare": 70,
+    "medianViews": 5138
+   }
+  },
+  "q_asmr": {
+   "name": "ASMR",
+   "videos": [
+    {
+     "id": "rm1mchJA_j0",
+     "title": "Successful✅️ & unsuccessful ❎️days #asmr #youtubeshorts",
+     "channel": "shfk",
+     "publishedAt": "2026-08-07T10:00:20Z",
+     "views": 1153760,
+     "likes": 9015,
+     "comments": 33,
+     "durationSec": 41,
+     "thumb": "https://i.ytimg.com/vi/rm1mchJA_j0/mqdefault.jpg"
+    },
+    {
+     "id": "jjerzJWtIes",
+     "title": "Successful✅️ & unsuccessful ❎️days #asmr #youtubeshorts",
+     "channel": "shfk",
+     "publishedAt": "2026-08-09T09:58:32Z",
+     "views": 210097,
+     "likes": 1576,
+     "comments": 7,
+     "durationSec": 41,
+     "thumb": "https://i.ytimg.com/vi/jjerzJWtIes/mqdefault.jpg"
+    },
+    {
+     "id": "asJB95lDgUE",
+     "title": "Successful✅️& unsuccessful❎️days #asmr #youtubeshorts",
+     "channel": "Queen gravity ",
+     "publishedAt": "2026-08-09T12:49:17Z",
+     "views": 134356,
+     "likes": 1589,
+     "comments": 4,
+     "durationSec": 23,
+     "thumb": "https://i.ytimg.com/vi/asJB95lDgUE/mqdefault.jpg"
+    },
+    {
+     "id": "etAJ3mbljFs",
+     "title": "역대급 미친 퀄리티 ASMR 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
+     "channel": "랭킹강",
+     "publishedAt": "2026-08-08T09:00:30Z",
+     "views": 60144,
+     "likes": 1938,
+     "comments": 24,
+     "durationSec": 32,
+     "thumb": "https://i.ytimg.com/vi/etAJ3mbljFs/mqdefault.jpg"
+    },
+    {
+     "id": "pOfy-aOgVPY",
+     "title": "역대급 일상 ASMR 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
+     "channel": "랭킹각",
+     "publishedAt": "2026-08-08T09:00:02Z",
+     "views": 50007,
+     "likes": 376,
+     "comments": 6,
+     "durationSec": 30,
+     "thumb": "https://i.ytimg.com/vi/pOfy-aOgVPY/mqdefault.jpg"
+    },
+    {
+     "id": "uiIjZcXW6b4",
+     "title": "김부각이 외국에선 고급안주거리 #바이럴 #쇼츠 #김부각",
+     "channel": "월드핫이슈",
+     "publishedAt": "2026-08-08T11:00:16Z",
+     "views": 33181,
+     "likes": 223,
+     "comments": 6,
+     "durationSec": 37,
+     "thumb": "https://i.ytimg.com/vi/uiIjZcXW6b4/mqdefault.jpg"
+    },
+    {
+     "id": "DzQylfSRIB4",
+     "title": "The JUICIEST Apple Crunch You’ll Hear Today! 🤯🍎💦 #Shorts",
+     "channel": "craftgardener",
+     "publishedAt": "2026-08-09T04:00:29Z",
+     "views": 33098,
+     "likes": 91,
+     "comments": 0,
+     "durationSec": 6,
+     "thumb": "https://i.ytimg.com/vi/DzQylfSRIB4/mqdefault.jpg"
+    },
+    {
+     "id": "Mu_hoLzbWxY",
+     "title": "Watch this tiny seed transform in 10 SECONDS!🌻 Wait for the magical bloom!  #Shorts #ASMR #MindBlown",
+     "channel": "Ai Art",
+     "publishedAt": "2026-08-08T18:18:10Z",
+     "views": 32627,
+     "likes": 207,
+     "comments": 0,
+     "durationSec": 11,
+     "thumb": "https://i.ytimg.com/vi/Mu_hoLzbWxY/mqdefault.jpg"
+    },
+    {
+     "id": "ZwTlRH2yloA",
+     "title": "Labubu Popit Injection! 💩😡💩 #asmr #shortfeed",
+     "channel": "Piku ASMR",
+     "publishedAt": "2026-08-07T07:00:11Z",
+     "views": 30968,
+     "likes": 102,
+     "comments": 0,
+     "durationSec": 6,
+     "thumb": "https://i.ytimg.com/vi/ZwTlRH2yloA/mqdefault.jpg"
+    },
+    {
+     "id": "uZk1jLum8ZU",
+     "title": "ASMR AMERICA'S ORIGINAL DUBBLE BUBBLE GUM (3 FRUIT FLAVORS) AND EATING🍅🍎🍊#funny#comedy#shorts",
+     "channel": "Zxr Shrabanti ",
+     "publishedAt": "2026-08-07T05:22:50Z",
+     "views": 29018,
+     "likes": 137,
+     "comments": 1,
+     "durationSec": 16,
+     "thumb": "https://i.ytimg.com/vi/uZk1jLum8ZU/mqdefault.jpg"
+    },
+    {
+     "id": "BRh58boqv4I",
+     "title": "#shorts #asmr #candy #satisfying #surprise #toys #funny",
+     "channel": "CANDY 🍭 XSS",
+     "publishedAt": "2026-08-09T12:30:36Z",
+     "views": 28296,
+     "likes": 107,
+     "comments": 0,
+     "durationSec": 8,
+     "thumb": "https://i.ytimg.com/vi/BRh58boqv4I/mqdefault.jpg"
+    },
+    {
+     "id": "sVtC84YDgp8",
+     "title": "#shorts #asmr #candy #satisfying #surprise #toys #funny",
+     "channel": "CANDY 🍭 XSS",
+     "publishedAt": "2026-08-08T12:30:36Z",
+     "views": 28097,
+     "likes": 107,
+     "comments": 0,
+     "durationSec": 9,
+     "thumb": "https://i.ytimg.com/vi/sVtC84YDgp8/mqdefault.jpg"
+    },
+    {
+     "id": "fq4KDzyHGns",
+     "title": "사람 음식에 맛 들린 낙타 먹방 ASMR",
+     "channel": "쇼츠잉",
+     "publishedAt": "2026-08-09T11:00:21Z",
+     "views": 23226,
+     "likes": 87,
+     "comments": 8,
+     "durationSec": 29,
+     "thumb": "https://i.ytimg.com/vi/fq4KDzyHGns/mqdefault.jpg"
+    },
+    {
+     "id": "MJOjJhQtLzY",
+     "title": "Far Cry 4 1911 Empty vs Tactical Reload Comparison | ASMR #shorts",
+     "channel": "The Pixel Stride",
+     "publishedAt": "2026-08-07T19:00:37Z",
+     "views": 21771,
+     "likes": 83,
+     "comments": 2,
+     "durationSec": 7,
+     "thumb": "https://i.ytimg.com/vi/MJOjJhQtLzY/mqdefault.jpg"
+    },
+    {
+     "id": "4IL0jXRRrbk",
+     "title": "#halo #asmr",
+     "channel": "PR FACTS ",
+     "publishedAt": "2026-08-07T11:00:40Z",
+     "views": 20296,
+     "likes": 0,
+     "comments": 1,
+     "durationSec": 45,
+     "thumb": "https://i.ytimg.com/vi/4IL0jXRRrbk/mqdefault.jpg"
+    },
+    {
+     "id": "4bRotq7L4JU",
+     "title": "#Ear clearning- Dr Tuan ENT ASMR",
+     "channel": "DR. TUAN ENT ASMR",
+     "publishedAt": "2026-08-07T10:00:03Z",
+     "views": 19810,
+     "likes": 122,
+     "comments": 2,
+     "durationSec": 17,
+     "thumb": "https://i.ytimg.com/vi/4bRotq7L4JU/mqdefault.jpg"
+    },
+    {
+     "id": "v2e06rq8iPo",
+     "title": "Pure Stingless Bee Honey Drinking ~ 206  🍯🐝 #shorts",
+     "channel": "Stingless Girl ASMR",
+     "publishedAt": "2026-08-07T12:00:11Z",
+     "views": 14641,
+     "likes": 71,
+     "comments": 2,
+     "durationSec": 14,
+     "thumb": "https://i.ytimg.com/vi/v2e06rq8iPo/mqdefault.jpg"
+    },
+    {
+     "id": "Af0g9Y4Z6QM",
+     "title": "ASMR Wilderness Cooking Giant River Prawns in Bamboo Tube",
+     "channel": "HEALING RAIN ASMR DEEP",
+     "publishedAt": "2026-08-09T06:00:32Z",
+     "views": 12053,
+     "likes": 148,
+     "comments": 0,
+     "durationSec": 41,
+     "thumb": "https://i.ytimg.com/vi/Af0g9Y4Z6QM/mqdefault.jpg"
+    },
+    {
+     "id": "tE1LnE_t8S8",
+     "title": "👅💩 #asmr #shorts #shortvideo",
+     "channel": "NOBURIN  ASMR🥱",
+     "publishedAt": "2026-08-09T01:23:43Z",
+     "views": 11164,
+     "likes": 78,
+     "comments": 17,
+     "durationSec": 16,
+     "thumb": "https://i.ytimg.com/vi/tE1LnE_t8S8/mqdefault.jpg"
+    },
+    {
+     "id": "EkM27aal80w",
+     "title": "Asmr shorts eating thukpaa,momo,panipuri #bhfyp #mukbang #mgfoodandmukbang",
+     "channel": "yum mukbang🤤",
+     "publishedAt": "2026-08-07T04:30:28Z",
+     "views": 9863,
+     "likes": 0,
+     "comments": 0,
+     "durationSec": 21,
+     "thumb": "https://i.ytimg.com/vi/EkM27aal80w/mqdefault.jpg"
+    }
+   ],
+   "stats": {
+    "avgDurationSec": 23,
+    "peakUploadSlotKST": "18~21시",
+    "peakUploadShare": 40,
+    "avgTitleLength": 52,
+    "hashtagShare": 90,
+    "medianViews": 29018
+   }
+  }
+ }
+}
