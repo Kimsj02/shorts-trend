@@ -12,19 +12,19 @@ const MIN_RESULTS = 5;       // 이보다 적으면 기간을 늘려 재시도
 const MAX_SEC = 180;         // 쇼츠 최대 길이 (3분)
 const PER_CATEGORY = 20;     // 카테고리당 저장 개수
 
-// 카테고리 코드는 업로더가 직접 고르는 값이라 실제 내용과 자주 어긋납니다.
-// 물량이 적거나 분류가 부정확한 주제는 키워드 검색으로 잡습니다.
+// 카테고리 코드(videoCategoryId)로 거르면 결과가 비는 경우가 잦아서
+// 전부 키워드 검색으로 통일했습니다. queries는 앞에서부터 순서대로 시도합니다.
 const CATEGORIES = [
-  { id: 'all',     name: '전체',         type: 'chart' },
-  { id: 'c10',     name: '음악/댄스',     type: 'category', value: '10' },
-  { id: 'c20',     name: '게임',         type: 'category', value: '20' },
-  { id: 'c23',     name: '코미디/밈',     type: 'category', value: '23' },
-  { id: 'q_pet',   name: '반려동물',      type: 'query',    value: '강아지 고양이 쇼츠' },
-  { id: 'q_beauty',name: '뷰티/패션',     type: 'query',    value: '뷰티 메이크업 쇼츠' },
-  { id: 'q_sport', name: '스포츠',       type: 'query',    value: '스포츠 하이라이트 쇼츠' },
-  { id: 'q_vlog',  name: '브이로그/일상', type: 'query',    value: '일상 브이로그 쇼츠' },
-  { id: 'q_food',  name: '먹방/요리',     type: 'query',    value: '먹방 쇼츠' },
-  { id: 'q_asmr',  name: 'ASMR',        type: 'query',    value: 'ASMR 쇼츠' }
+  { id: 'all',      name: '전체',         type: 'chart' },
+  { id: 'q_music',  name: '음악/댄스',     queries: ['커버댄스 쇼츠', '노래 커버 쇼츠', '챌린지 댄스'] },
+  { id: 'q_game',   name: '게임',         queries: ['게임 쇼츠', '게임 하이라이트 쇼츠', '롤 배그 쇼츠'] },
+  { id: 'q_funny',  name: '코미디/밈',     queries: ['웃긴영상 쇼츠', '개그 쇼츠', '밈 쇼츠'] },
+  { id: 'q_pet',    name: '반려동물',      queries: ['강아지 고양이 쇼츠', '반려동물 쇼츠'] },
+  { id: 'q_beauty', name: '뷰티/패션',     queries: ['뷰티 메이크업 쇼츠', '메이크업 튜토리얼 쇼츠'] },
+  { id: 'q_sport',  name: '스포츠',       queries: ['스포츠 하이라이트 쇼츠', '축구 야구 쇼츠'] },
+  { id: 'q_vlog',   name: '브이로그/일상', queries: ['일상 브이로그 쇼츠', '브이로그 쇼츠'] },
+  { id: 'q_food',   name: '먹방/요리',     queries: ['먹방 쇼츠', '요리 레시피 쇼츠'] },
+  { id: 'q_asmr',   name: 'ASMR',        queries: ['ASMR 쇼츠', 'ASMR 소리'] }
 ];
 
 const API = 'https://www.googleapis.com/youtube/v3/';
@@ -51,7 +51,7 @@ async function apiGet(pathName, params){
   return data;
 }
 
-async function collectIds(cat, days){
+async function collectIds(cat, days, query){
   if(cat.type === 'chart'){
     const d = await apiGet('videos', {
       part: 'id', chart: 'mostPopular', regionCode: REGION, maxResults: '50'
@@ -59,15 +59,13 @@ async function collectIds(cat, days){
     return (d.items || []).map(v => v.id);
   }
 
-  const params = {
+  const d = await apiGet('search', {
     part: 'id', type: 'video', videoDuration: 'short',
     order: 'viewCount', maxResults: '50',
-    publishedAfter: isoDaysAgo(days), regionCode: REGION
-  };
-  if(cat.type === 'category') params.videoCategoryId = cat.value;
-  if(cat.type === 'query')    params.q = cat.value;
-
-  const d = await apiGet('search', params);
+    publishedAfter: isoDaysAgo(days), regionCode: REGION,
+    relevanceLanguage: 'ko',
+    q: query
+  });
   return (d.items || []).map(it => it.id && it.id.videoId).filter(Boolean);
 }
 
@@ -119,10 +117,10 @@ async function main(){
 
   const result = { date: new Date().toISOString().slice(0,10), region: REGION, categories: {} };
 
-  // 지정 기간으로 한 번 시도하고, 결과가 적으면 기간을 늘려 다시 시도
-  async function gather(cat, days){
+  // 검색어를 순서대로 시도하고, 그래도 부족하면 기간을 늘려 재시도
+  async function gather(cat, days, query){
     const after = new Date(isoDaysAgo(days)).getTime();
-    const ids = await collectIds(cat, days);
+    const ids = await collectIds(cat, days, query);
     const detail = await fetchDetails([...new Set(ids)]);
 
     return detail
@@ -145,26 +143,35 @@ async function main(){
 
   for(const cat of CATEGORIES){
     try{
-      let usedDays = DAYS;
-      let videos = await gather(cat, DAYS);
+      let best = [], usedDays = DAYS, usedQuery = null;
 
-      if(videos.length < MIN_RESULTS && cat.type !== 'chart'){
-        console.log(`${cat.name}: ${videos.length}개뿐 -> ${FALLBACK_DAYS}일로 재시도`);
-        const wider = await gather(cat, FALLBACK_DAYS);
-        if(wider.length > videos.length){
-          videos = wider;
-          usedDays = FALLBACK_DAYS;
+      if(cat.type === 'chart'){
+        best = await gather(cat, DAYS, null);
+      }else{
+        // 1) 기본 기간으로 검색어를 하나씩 시도
+        for(const q of cat.queries){
+          const got = await gather(cat, DAYS, q);
+          if(got.length > best.length){ best = got; usedQuery = q; }
+          if(best.length >= MIN_RESULTS) break;
+        }
+        // 2) 그래도 부족하면 첫 검색어로 기간을 늘려 재시도
+        if(best.length < MIN_RESULTS){
+          const wider = await gather(cat, FALLBACK_DAYS, cat.queries[0]);
+          if(wider.length > best.length){
+            best = wider; usedDays = FALLBACK_DAYS; usedQuery = cat.queries[0];
+          }
         }
       }
 
       result.categories[cat.id] = {
         name: cat.name,
         windowDays: usedDays,
-        videos,
-        stats: analyze(videos)
+        query: usedQuery,
+        videos: best,
+        stats: analyze(best)
       };
 
-      console.log(`${cat.name}: ${videos.length}개 수집 (최근 ${usedDays}일)`);
+      console.log(`${cat.name}: ${best.length}개 (최근 ${usedDays}일${usedQuery ? ', "' + usedQuery + '"' : ''})`);
     }catch(e){
       console.error(`${cat.name} 실패: ${e.message}`);
       result.categories[cat.id] = { name: cat.name, videos: [], stats: null, error: e.message };
