@@ -178,6 +178,28 @@ async function main(){
     }
   }
 
+  // '전체'는 급상승 차트만으로는 쇼츠가 몇 개 안 남으므로
+  // 모든 카테고리에서 모은 영상을 합쳐 통합 랭킹으로 다시 만듭니다. (추가 호출 없음)
+  const merged = new Map();
+  Object.entries(result.categories).forEach(([id, c]) => {
+    if(id === 'all') return;
+    (c.videos || []).forEach(v => merged.set(v.id, v));
+  });
+  (result.categories.all.videos || []).forEach(v => merged.set(v.id, v));
+
+  const allVideos = [...merged.values()]
+    .sort((a,b) => b.views - a.views)
+    .slice(0, PER_CATEGORY);
+
+  result.categories.all = {
+    name: '전체',
+    windowDays: DAYS,
+    query: null,
+    videos: allVideos,
+    stats: analyze(allVideos)
+  };
+  console.log(`전체(통합): ${allVideos.length}개`);
+
   const dir = path.join(__dirname, '..', 'data');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, `${result.date}.json`), JSON.stringify(result, null, 1));
